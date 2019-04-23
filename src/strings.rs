@@ -27,4 +27,29 @@ pub fn run() {
 	for word in hello_mut.split_whitespace() {
 		println!("{}", word);
 	}
+
+	// With capacity
+	let mut str_with_capacity = String::with_capacity(10);
+	str_with_capacity.push_str("game of thrones");
+
+	// Nothing happen
+	assert_eq!(15, str_with_capacity.len());
+
+	// Panic capacity == 20
+	//assert_eq!(10, str_with_capacity.capacity());
+
+	// Variable removed after assignment another variable
+	let s1 = String::from("Hello");
+	let s2 = s1;
+	// Error
+	println!("{}", s1);
+	println!("{}", s2);
+
+	// Method clone - bad perfomance, but solve the problem
+	let s_1 = String::from("Hello");
+	let s_2 = s1.clone();
+	// No error
+	println!("{}", s1);
+	println!("{}", s2);
+
 }
