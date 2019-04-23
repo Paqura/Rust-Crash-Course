@@ -5,6 +5,9 @@
 //mod reference;
 //mod slices;
 //mod tuples;
+//mod arrays;
+//mod vectors;
+mod loops;
 
 fn main() {
 	//print::run();
@@ -13,5 +16,8 @@ fn main() {
 	//strings::run();
 	//reference::run();
 	//slices::run();
-	tuples::run();
+	//tuples::run();
+	//arrays::run();
+	//vectors::run();
+	loops::run();
 }

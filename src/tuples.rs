@@ -1,11 +1,6 @@
-// pub fn run() {
-// 	my_stack();
-// }
+pub fn run() {
+	let person: (&str, &str, i8) = ("Slava", "Avals", 27);
 
-// fn my_stack() {
-// 	let m_arr: [i32; 5] = [1, 55, 2123, 423, 33];
-
-// 	for el in m_arr.iter() {
-// 		println!("{}", el);
-// 	}
-// }
+	println!("{}, {}, {}", person.0, person.1, person.2);
+	println!("{}", i8::max_value());
+}
